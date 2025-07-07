@@ -1,8 +1,8 @@
 // ---------------------
 // Webhook Endpoints
 // ---------------------
-const WEBHOOK_URL_FINAL_SUBMIT = 'https://hook.us2.make.com/pbdttwouwpxwaowkecoj45nhy2pj1apn';
-const WEBHOOK_URL_PAYMENT_LINK = 'https://hook.us2.make.com/pbdttwouwpxwaowkecoj45nhy2pj1apn'; // Change if a different endpoint generates the payment link
+const WEBHOOK_URL_FINAL_SUBMIT = 'https://hook.us2.make.com/ebqb7kjluvvh7pqhmi8qa2oi2g2aw6oh';
+const WEBHOOK_URL_PAYMENT_LINK = 'https://hook.us2.make.com/ebqb7kjluvvh7pqhmi8qa2oi2g2aw6oh'; // Change if a different endpoint generates the payment link
 
 // Global function to show enlarged image (accessible from HTML)  
 function showEnlargedImage(element) {
