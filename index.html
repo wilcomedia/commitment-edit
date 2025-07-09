@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilco Media Commitment Edit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-section">
+                <img src="https://imgur.com/a/9D4WwMR" alt="Wilco Media Logo" class="wm-logo">
+                <h1>Wilco Media Commitment Edit</h1>
+                <h2>Any Sport – Any Level – Any Athlete</h2>
+                <p class="header-contact">Questions? <a href="https://www.instagram.com/madebywilco" class="pink-text instagram-link" target="_blank">@madebywilco</a> | <a href="mailto:info@wilcomediallc.com" class="pink-text">info@wilcomediallc.com</a></p>
+            </div>
+        </header>
+
+        <main>
+            <form id="commitmentEditForm">
+                <input type="hidden" name="paymentMethod" id="paymentMethod" />
+                <!-- Basic Info Section -->
+                <section class="form-section">
+                    <h3>Athlete Info:<span style="color:red">*</span></h3>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="school">School Committing To:</label>
+                        <input type="text" id="school" name="school" required>
+                    </div>
+                </section>
+
+                <!-- Edit Style Selection -->
+                <section class="form-section">
+                    <h3>Choose Your Edit Style:<span style="color:red">*</span></h3>
+                    <div class="style-grid">
+                        <div class="style-option">
+                            <input type="radio" id="style1" name="editStyle" value="Style 1: Lighting Edit" required>
+                            <label for="style1" class="style-card">
+                                <div class="price-tag">$25</div>
+                                <div class="enlarge-icon"><i class="fas fa-search-plus"></i></div>
+                                <div class="style-img" data-photos="1">
+                                    <img src="https://i.ibb.co/YBDJp3zn/LIGHTING-EXAMPLE.png" alt="Lighting Edit">
+                                </div>
+                                <span>1. Lighting Edit</span>
+                                <span class="photo-count">(1 picture used)</span>
+                            </label>
+                        </div>
+                        
+                        <div class="style-option">
+                            <input type="radio" id="style2" name="editStyle" value="Style 2: Grunge Edit">
+                            <label for="style2" class="style-card">
+                                <div class="price-tag">$25</div>
+                                <div class="enlarge-icon"><i class="fas fa-search-plus"></i></div>
+                                <div class="style-img" data-photos="1">
+                                    <img src="https://i.ibb.co/qLCGzs96/GRUNGE-EXAMPLE.png" alt="Grunge Edit">
+                                </div>
+                                <span>2. Grunge Edit</span>
+                                <span class="photo-count">(1 picture used)</span>
+                            </label>
+                        </div>
+                        
+                        
+                        <div class="style-option">
+                            <input type="radio" id="style4" name="editStyle" value="Style 4: Voltage Edit">
+                            <label for="style4" class="style-card">
+                                <div class="price-tag">$25</div>
+                                <div class="enlarge-icon"><i class="fas fa-search-plus"></i></div>
+                                <div class="style-img" data-photos="1">
+                                    <img src="https://i.ibb.co/fdxYc73z/VOLTAGE-EXAMPLE.png" alt="Voltage Edit">
+                                </div>
+                                <span>3. Voltage Edit</span>
+                                <span class="photo-count">(1 picture used)</span>
+                            </label>
+                        </div>
+                        
+                        <div class="style-option">
+                            <input type="radio" id="style5" name="editStyle" value="Style 5: Noir Edit">
+                            <label for="style5" class="style-card">
+                                <div class="price-tag">$25</div>
+                                <div class="enlarge-icon"><i class="fas fa-search-plus"></i></div>
+                                <div class="style-img" data-photos="1">
+                                    <img src="https://i.ibb.co/3mFFLr4Y/NOIR-EXAMPLE.png" alt="Noir Edit">
+                                </div>
+                                <span>4. Noir Edit</span>
+                                <span class="photo-count">(1 picture used)</span>
+                            </label>
+                        </div>
+
+                        <!-- Slate Edit -->
+                        <div class="style-option">
+                            <input type="radio" id="style10" name="editStyle" value="Style 10: Slate Edit">
+                            <label for="style10" class="style-card">
+                                <div class="price-tag">$25</div>
+                                <div class="enlarge-icon"><i class="fas fa-search-plus"></i></div>
+                                <div class="style-img" data-photos="1">
+                                    <img src="https://i.ibb.co/7DFGFMR/SLATE-EXAMPLE.png" alt="Slate Edit">
+                                </div>
+                                <span>5. Slate Edit</span>
+                                <span class="photo-count">(1 picture used)</span>
+                            </label>
+                        </div>
+
+                        <!-- Slate Edit (moved) -->
+                        
+                        <div class="style-option">
+                            <input type="radio" id="style8" name="editStyle" value="Style 8: Glitch Edit">
+                            <label for="style8" class="style-card">
+                                <div class="price-tag">$25</div>
+                                <div class="enlarge-icon"><i class="fas fa-search-plus"></i></div>
+                                <div class="style-img" data-photos="1">
+                                    <img src="https://i.ibb.co/2DqxRPZ/GLITCH-EXAMPLE.png" alt="Glitch Edit">
+                                </div>
+                                <span>6. Glitch Edit</span>
+                                <span class="photo-count">(1 picture used)</span>
+                            </label>
+                        </div>
+
+
+                        <!-- Stadium Edit (moved) -->
+                        <div class="style-option">
+                             <input type="radio" id="style3" name="editStyle" value="Style 3: Stadium Edit" data-price="30">
+                            <label for="style3" class="style-card">
+                                <div class="price-tag">$30</div>
+                                <div class="enlarge-icon"><i class="fas fa-search-plus"></i></div>
+                                <div class="style-img" data-photos="1">
+                                    <img src="https://i.ibb.co/84zqXpQ9/STADIUM-EXAMPLE.png" alt="Stadium Edit">
+                                </div>
+                                <span>7. Stadium Edit</span>
+                                <span class="photo-count">(1 picture used)</span>
+                            </label>
+                        </div>
+                        
+                        <div class="style-option">
+                             <input type="radio" id="style9" name="editStyle" value="Style 9: Chrome Edit" data-price="30">
+                            <label for="style9" class="style-card">
+                                <div class="price-tag">$30</div>
+                                <div class="enlarge-icon"><i class="fas fa-search-plus"></i></div>
+                                <div class="style-img" data-photos="1">
+                                    <img src="https://i.ibb.co/99zxcMhP/CHROME-EXAMPLE.png" alt="Chrome Edit">
+                                </div>
+                                <span>8. Chrome Edit</span>
+                                <span class="photo-count">(1 picture used)</span>
+                            </label>
+                        </div>
+                        
+                        
+
+
+                        <div class="style-option">
+                            <input type="radio" id="style6" name="editStyle" value="Style 6: Combo Lighting Edit">
+                            <label for="style6" class="style-card">
+                                <div class="price-tag">$30</div>
+                                <div class="enlarge-icon"><i class="fas fa-search-plus"></i></div>
+                                <div class="style-img" data-photos="2">
+                                    <img src="https://i.ibb.co/v43fZ1jJ/COMBO-LIGHTING-EXAMPLE.png" alt="Combo Lighting Edit">
+                                </div>
+                                <span>9. Combo Lighting Edit</span>
+                                <span class="photo-count">(2 pictures used)</span>
+                            </label>
+                        </div>
+                        
+                        <div class="style-option">
+                            <input type="radio" id="style7" name="editStyle" value="Style 7: Combo Grunge Edit">
+                            <label for="style7" class="style-card">
+                                <div class="price-tag">$30</div>
+                                <div class="enlarge-icon"><i class="fas fa-search-plus"></i></div>
+                                <div class="style-img" data-photos="2">
+                                    <img src="https://i.ibb.co/dsCXLZ6H/COMBO-GRUNGE-EXAMPLE.png" alt="Combo Grunge Edit">
+                                </div>
+                                <span>10. Combo Grunge Edit</span>
+                                <span class="photo-count">(2 pictures used)</span>
+                            </label>
+                        </div>
+                        
+                        <div class="style-option">
+                            <input type="radio" id="style11" name="editStyle" value="Style 8: Combo Stadium Edit" data-price="35">
+                            <label for="style11" class="style-card">
+                                <div class="price-tag">$35</div>
+                                <div class="enlarge-icon"><i class="fas fa-search-plus"></i></div>
+                                <div class="style-img" data-photos="2">
+                                    <img src="https://i.ibb.co/FqhVGXht/COMBO-STADIUM-EXAMPLE.png" alt="Combo Stadium Edit">
+                                </div>
+                                <span>11. Combo Stadium Edit</span>
+                                <span class="photo-count">(2 pictures used)</span>
+                            </label>
+                        </div>
+                        
+                        <div class="style-option">
+                            <input type="radio" id="style12" name="editStyle" value="Style 9: Triple Lighting Edit">
+                            <label for="style12" class="style-card">
+                                <div class="price-tag">$35</div>
+                                <div class="enlarge-icon"><i class="fas fa-search-plus"></i></div>
+                                <div class="style-img" data-photos="3">
+                                    <img src="https://i.ibb.co/6cmW3nsq/TRIPLE-LIGHTING-EXAMPLE.png" alt="Triple Lighting Edit">
+                                </div>
+                                <span>12. Triple Lighting Edit</span>
+                                <span class="photo-count">(3 pictures used)</span>
+                            </label>
+                        </div>
+                        
+
+
+                        
+
+                    </div>
+                </section>
+
+                <!-- Jersey Swap Option -->
+                <section class="form-section" id="jerseySwapSection">
+                    <h3>Jersey Swap Options:<span style="color:red">*</span></h3>
+                    <p>Choose how many jersey swaps you'd like (jersey changed to your future school):</p>
+                        <div style="margin:10px 0;text-align:center;">
+                            <div class="jersey-demo" style="position:relative; display:inline-block;">
+                                <div class="enlarge-icon" onclick="showExampleImage(this.parentNode.querySelector('img'))"><i class="fas fa-search-plus"></i></div>
+                                <img src="https://i.ibb.co/9mGyD3p1/jersey-swap-before-after.png" alt="Jersey swap before and after example" style="width:300px;height:auto;border-radius:6px;box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:pointer;" onclick="showExampleImage(this)">
+                            </div>
+                        </div>
+                    
+                    <div class="form-group" id="jerseySwapOptions" style="display:none;">
+                        <div class="swap-option">
+                            <input type="radio" id="noSwap" name="jerseySwapCount" value="0" checked>
+                            <label for="noSwap">No jersey swap (+$0)</label>
+                        </div>
+                        
+                        <div class="swap-option" id="swap1Option">
+                            <input type="radio" id="swap1" name="jerseySwapCount" value="1">
+                            <label for="swap1">1 jersey swap (+$20)</label>
+                        </div>
+                        
+                        <div class="swap-option" id="swap2Option">
+                            <input type="radio" id="swap2" name="jerseySwapCount" value="2">
+                            <label for="swap2">2 jersey swaps (+$30)</label>
+                        </div>
+                        
+                        <div class="swap-option" id="swap3Option">
+                            <input type="radio" id="swap3" name="jerseySwapCount" value="3">
+                            <label for="swap3">3 jersey swaps (+$35)</label>
+                        </div> <!-- close swap3 option -->
+                        </div> <!-- close hidden radio container -->
+
+                    <!-- Jersey swap dropdown -->
+                    <div class="form-group" style="margin-top:10px;">
+                        <label for="jerseySwapSelect" style="display:block; margin-bottom:6px;">Select jersey swap amount:</label>
+                        <div class="custom-select">
+                            <select id="jerseySwapSelect" name="jerseySwapSelect" class="styled-select" required>
+                                <option value="0" selected>No jersey swap (+$0)</option>
+                                <option value="1">1 jersey swap (+$20)</option>
+                                <option value="2">2 jersey swaps (+$30)</option>
+                                <option value="3">3 jersey swaps (+$35)</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="jerseyNumberGroup" style="display:none; margin-top:10px;">
+                        <label for="jerseyNumber">Enter jersey number for swap (not required):</label>
+                        <input type="text" id="jerseyNumber" name="jerseyNumber" pattern="\d{1,2}" placeholder="e.g., 12">
+                    </div>
+                </section>
+
+                <!-- Photo Upload Section -->
+                <section class="form-section">
+                    <h3>Upload Photos:<span style="color:red">*</span></h3>
+                    <div class="form-group">
+                        <div class="upload-container" id="uploadContainer">
+                            <div class="upload-area" id="uploadArea">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Drag & drop photos here or</p>
+                                <button type="button" id="browseBtn">Browse Files</button>
+                                <input type="file" id="photoUpload" name="photos[]" accept="image/*" multiple hidden required>
+                            </div>
+                            <div class="upload-preview" id="uploadPreview"></div>
+                            <p class="upload-note">Maximum 3 files. Please upload high-quality images for best results.</p>
+                        </div>
+                        <div class="photo-requirements" id="photoRequirements">
+                            <p>Required photos: <span id="requiredPhotoCount">1</span></p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Turnaround Time -->
+                <section class="form-section">
+                    <h3>Turnaround Time:<span style="color:red">*</span></h3>
+                    <div class="form-group">
+                        <div class="custom-select">
+                            <select id="turnaroundTime" name="turnaroundTime" required>
+                                <option value="" disabled selected>Select turnaround time</option>
+                                <option value="urgent">Urgent: same day - must be ordered before 12 pm ET (+$25)</option>
+                                <option value="priority">Priority: 1 day (+$15)</option>
+                                <option value="standard">Standard: 2–3 days (+$0)</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Order Summary -->
+                <section class="form-section summary-section">
+                    <h3>Order Summary</h3>
+                    <div class="summary-items">
+                        <div class="summary-item">
+                            <span>Edit Price:</span>
+                            <span id="basePrice">$0.00</span>
+                        </div>
+                        <div class="summary-item" id="jerseySwapRow" style="display:none;">
+                            <span id="jerseySwapFee">Jersey Swap Add-On:</span>
+                            <span id="jerseySwapFeeValue">$0.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Turnaround Fee:</span>
+                            <span id="turnaroundFee">$0.00</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total:</span>
+                            <span id="totalPrice">$0.00</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Submit Button -->
+                <section class="form-section">
+                    <button type="submit" id="paymentBtn" class="submit-btn">Continue to Payment</button>
+                </section>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Wilco Media, LLC. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Complete Your Payment</h2>
+            <div id="paymentLinkContainer">
+                <p>Generating payment link...</p>
+                <div class="loader"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal image-modal">
+        <div class="image-modal-content">
+            <span class="close-button" id="closeImageBtn">&times;</span>
+            <div class="enlarged-image-container">
+                <img src="" alt="Enlarged image" class="enlarged-image" id="enlargedImage">
+            </div>
+        </div>
+    </div>
+
+    <div id="thankYouScreen" class="modal">
+        <div class="modal-content" style="text-align:center;">
+            <h2>Thank you for your order!</h2>
+            <p style="margin:15px 0 25px;">We will reach out shortly via email to confirm the details of your form.</p>
+            <button class="submit-btn" id="closeThankYouBtn" style="max-width:220px;margin:0 auto;">Go to Homepage</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
